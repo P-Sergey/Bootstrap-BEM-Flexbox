@@ -7,7 +7,7 @@
   }
  
 .main {
-  max-width: 1260px;
+  max-width: 1440px;
   margin-left: 15%;
   margin-right: 15%;   
 }
@@ -28,8 +28,25 @@
 }
 
 .logo {
-  width: 168px;
+  display: flex;
+  justify-content: space-between;
   height: 50px;
+}
+
+.logo_box {
+  border: 3px solid #FFC740;
+  width: 50px;
+  height: 50px;
+}
+
+.logo_text {
+  font-size: 24px;
+  line-height: 28px;
+  background-color: white;
+  font-weight: bold;
+  align-self: center;
+  position: relative;
+  right: 25px;
 }
 
 .search {
@@ -64,11 +81,6 @@
   top: 94px;
 }
 
-.navigation {    
-  display: flex;
-  justify-content: space-between;  
-}
-
 .link_menu {
   color: black;
   text-align: center;    
@@ -76,17 +88,6 @@
   font-size: 14px;  
   width: 123px;
   padding: 15px 0;
-}
-
-.link_contact {
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;  
-  width: 106px;
-  padding: 15px 0;
-  position: relative;
-  left: 5px;
 }
 
 .link_menu.active {
@@ -99,14 +100,6 @@
   color: black;
 }
 
-.img_frame {
-  width: 964px;
-  height: 362px;
-  position: absolute;
-  top: 146px;
-  left: 146px;
-}
-
 .banner {
   position: relative;
   margin-top: 20px;
@@ -114,7 +107,7 @@
   height: 100%;
 }
 
-.shade_img {
+.banner_shading {
   background-color: rgba(0, 0, 0, 0.38);   
   width: 100%;
   height: 100%;   
@@ -122,8 +115,9 @@
   top: 0; 
 }
 
-.text_img {
+.banner_header {
   font-size: 4.8vw;
+  line-height: 5.8vw;
   color: #FFC740;
   width: 60%;
   position: absolute;
@@ -131,40 +125,43 @@
   top: 5%;
 }
 
-@media screen and (min-width: 1340px) {
-  div.text_img {
-    font-size: 64px;
+@media screen and (min-width: 1440px) {
+  div.banner_header {
+    font-size: 75px;
+    line-height: 85px;
   }
-}
+} 
 
-.second_text_img {   
+.banner_text {   
   font-size: 1vw;  
+  line-height: 1.3vw;
   color: white;
-  width: 50%;
+  width: 48%;
   position: absolute;
   left: 5%;
-  top: 58%;
+  top: 53%;
 }
 
 @media screen and (min-width: 1340px) {
-  div.second_text_img {
-    font-size: 12px;
+  div.banner_text {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
-.ref_img {
+.banner_ref_button {
   width: 125px;
   height: 34px;
   text-decoration: none;
   font-size: 14px;
   background-color: #6D3D99;   
-  position: absolute;
+  position: relative;
   left: 6.5%;
   top: 80%;
   text-align: center;
 }
  
-.top_ref {
+.banner_ref {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -241,7 +238,7 @@
 }
 
 .bottom_center_text {
-  width: 249px; 
+  width: auto; 
   height: 45px;
 }
  
@@ -307,6 +304,7 @@
   font-weight: normal;
   padding-left: 0;
   color: black;
+  text-decoration: underline;
 }
 
 .clents_block {
