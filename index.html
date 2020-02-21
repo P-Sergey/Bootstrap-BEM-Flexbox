@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Тема 4 - Bootstrap-BEM-Flexbox</title>
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
   </head>  
@@ -10,12 +11,12 @@
   <body class="body">
     <header>       
       <p class="top_line"></p>
-    </header>
-
+    </header> 
+        
     <main class="main">      
      
 			<div class="row logo_search">
-        <div class="logo">
+        <div class="logo jump">
           <div class="logo_box"></div>
           <span class="logo_text">SUPER LOGO</span>
         </div>
@@ -40,10 +41,10 @@
         <div class="banner">
           <img class="col-12 img-fluid" src="img/Mountains-and-hills-julian-alps.png" alt="Banner">
           <div class="banner_shading">
-            <div class="row banner_header">
+            <div class="row banner_header fadeInDown">
               <span class="col">Aliquam pharetra vulputate</span>
             </div>                
-            <div class="row banner_text">
+            <div class="row banner_text fadeInLeft">
               <span class="col">
 								Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum turpis. 
                 Suspendisse sollicitudin quam eget condimentum posuere. 
@@ -51,7 +52,7 @@
                 Etiam eu consectetur nisi. Aenean blandit sodales euismod. In hac habitasse platea dictumst. 
               </span>
             </div>      
-            <div class="row banner_ref_button">
+            <div class="row banner_ref_button pulse">
               <a class="col banner_ref" href="index.html">READ MORE</a>
             </div>
           </div>
