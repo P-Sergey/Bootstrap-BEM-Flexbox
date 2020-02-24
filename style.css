@@ -34,13 +34,13 @@
   position: relative;
 }
 
-.logo_box {
+.logo__box {
   border: 3px solid #FFC740;
   width: 50px;
   height: 50px;
 }
 
-.logo_text {
+.logo__text {
   font-size: 24px;
   line-height: 28px;
   background-color: white;
@@ -50,7 +50,7 @@
   right: 25px;
 }
 
-.search {
+.search__field {
   border: 1px solid #6D3D99;
   border-right: none;
   padding: 5px;
@@ -62,7 +62,7 @@
   width: 159px;
 }
  
-.search_button {
+.search__button {
   width: 42px;
   height: 33px;
   border: 1px solid #9B51E0;
@@ -73,13 +73,6 @@
   font-size: 14px;
   font-weight: bold;
   padding-bottom: 0;
-}
-
-.menu {
-  width: 960px;
-  height: 50px;
-  position: absolute;
-  top: 94px;
 }
 
 .link_menu {
@@ -97,8 +90,10 @@
 }
  
 .link_menu:hover {
-  background-color: #ddd;
+  text-decoration: none;
   color: black;
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
 .banner {
@@ -167,6 +162,11 @@
   text-decoration: none;
   font-weight: bold;
   align-self: center;
+}
+
+.banner_ref:hover {
+  color: #FFC740;
+  text-decoration: none;
 }
 
 .news_block {
