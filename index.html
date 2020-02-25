@@ -3,67 +3,74 @@
   <head>
     <meta charset="utf-8">
     <title>Тема 4 - Bootstrap-BEM-Flexbox</title>
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </head>  
     
   <body class="body">
     <header>       
       <p class="top_line"></p>
-    </header>
-
-    <main class="main">
-
-			<div class="logo_search">
-        <img class="logo" src="img/catlogo.png" alt="Logo">
-          <span>
-            <input class="search" name="searchbox" type="search">
-            <input class="search_button" type="submit" value="GO">
-          </span>
+    </header> 
+        
+    <main class="main">      
+     
+			<div class="row logo_search">
+        <div class="logo jump">
+          <div class="logo__box"></div>
+          <span class="logo__text">SUPER LOGO</span>
+        </div>
+          <form>
+            <input class="search__field" name="searchbox" type="search">
+            <button class="search__button" type="submit">GO</button>
+          </form>
       </div>
-      <div class="menu">
-        <nav class="navigation"> 
-          <a class="active link_menu" href="index.html">HOME</a>
-          <a class="link_menu" href="about_us.html">ABOUT US</a>
-          <a class="link_menu" href="service.html">SERVICE</a>
-          <a class="link_menu" href="partners.html">PARTNERS</a>
-          <a class="link_menu" href="customers.html">CUSTOMERS</a>
-          <a class="link_menu" href="project.html">PROJECT</a>
-          <a class="link_menu" href="careers.html">CAREERS</a>
-          <a class="link_contact" href="contact.html">CONTACT</a>
-        </nav>
-      </div>
-      <div class="img_frame">
+      
+      <nav class="row"> 
+        <a class="col-sm-3 col-lg link_menu active" href="index.html">HOME</a>
+        <a class="col-sm-3 col-lg link_menu" href="about_us.html">ABOUT US</a>
+        <a class="col-sm-3 col-lg link_menu" href="service.html">SERVICE</a>
+        <a class="col-sm-3 col-lg link_menu" href="partners.html">PARTNERS</a>
+        <a class="col-sm-3 col-lg link_menu" href="customers.html">CUSTOMERS</a>
+        <a class="col-sm-3 col-lg link_menu" href="project.html">PROJECT</a>
+        <a class="col-sm-3 col-lg link_menu" href="careers.html">CAREERS</a>
+        <a class="col-sm-3 col-lg link_menu" href="contact.html">CONTACT</a>
+      </nav>
+        
+      <div class="row">
         <div class="banner">
-          <img src="img/Mountains-and-hills-julian-alps.png" alt="Banner">
-          <div class="shade_img">
-            <div class="text_img">
-              <span>Aliquam pharetra vulputate</span>
+          <img class="col-12 img-fluid" src="img/Mountains-and-hills-julian-alps.png" alt="Banner">
+          <div class="banner__shading">
+            <div class="row banner__header fadeInDown">
+              <span class="col">Aliquam pharetra vulputate</span>
             </div>                
-            <div class="second_text_img">
-              <span>
+            <div class="row banner__text fadeInLeft">
+              <span class="col">
 								Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum turpis. 
                 Suspendisse sollicitudin quam eget condimentum posuere. 
                 In auctor vel mi porta commodo. Vestibulum mattis fringilla tempus. 
                 Etiam eu consectetur nisi. Aenean blandit sodales euismod. In hac habitasse platea dictumst. 
               </span>
             </div>      
-            <div class="ref_img">
-              <a class="top_ref" href="index.html">READ MORE</a>
+            <div class="row banner__button_ref pulse">
+              <a class="col banner__ref" href="index.html">READ MORE</a>
             </div>
           </div>
 				</div>						
       </div>
 
-      <div class="news_block">
-      	<div class="news">
-        	<div class="block">
+      <div class="news">
+      	<div class="row news__block">
+        	<div class="col-sm-12 col-xl-6 block">
           	<p class="line_violet">
           	  <span class="line_violet_text">КОШКИ</span>
             </p>
             <div class="news_text_img">          	
               <img class="left_img" src="img/mini-cat.jpeg" alt="Main news">
-              <div class="news_text">
+              <div class="news__block_text">
                 <span>
 							    Ко́шка, или дома́шняя ко́шка (лат. Félis silvéstris cátus), — домашнее животное, 
 							    одно из наиболее популярных (наряду с собакой) «животных-компаньонов».
@@ -73,7 +80,7 @@
               </div>  
             </div>
         	</div>    
-        	<div class="block">
+        	<div class="col-sm-12 col-xl-6 block">
           	<p class="line_orange">
             	<span class="line_orange_text">ЕЩЁ НЕМНОГО О КОШКАХ</span>
             </p>
@@ -88,15 +95,16 @@
               </div> 
             </div>
         	</div>   
-        </div>          
-        <div class="news">
-          <div class="block">
+        </div>     
+
+        <div class="row news__block">
+          <div class="col-sm-12 col-xl-6 block">
             <p class="line_orange">
               <span class="line_orange_text">ЭТИМОЛОГИЯ</span>
             </p>
             <div class="news_text_img">
               <img class="left_img" src="img/wcat.jpg" alt="Main news">
-              <div class="news_text">
+              <div class="news__block_text">
 							  <span>
                   В русском языке слово кошка означает либо представителя биологического подвида Felis silvestris catus вообще независимо от пола, либо самку этого подвида.
                   Самца называют кот, а детёныша кошки — котёнок (мн. ч. котя́та).
@@ -105,13 +113,13 @@
               </div>  
             </div>
           </div>    
-          <div class="block">
+          <div class="col-sm-12 col-xl-6 block">
           	<p class="line_violet">
               <span class="line_violet_text">ПРОИСХОЖДЕНИЕ</span>
             </p>
             <div class="news_text_img">
               <img class="left_img" src="img/kitty.jpeg" alt="Main news">
-              <div class="news_text">
+              <div class="news__block_text">
 							  <span>
                   Согласно генетическому исследованию, все домашние кошки по материнской линии происходят как минимум от пяти представительниц подвида
                   степная кошка (Felis silvestris lybica), имеющих разные гаплотипы митохондриальной ДНК. 
@@ -124,7 +132,8 @@
       </div>
 
       <div class="bottom_news">
-        <div class="bottom_block">
+        <div class="row">
+        <div class="col-sm-6 col-xl-4 bottom_block">
           <p class="line_orange">
             <span class="line_orange_text">FIFe</span>
           </p>
@@ -137,12 +146,12 @@
           </div>  
         </div>
     
-        <div class="bottom_block">
+        <div class="col-sm-6 col-xl-4 bottom_block">
           <p class="line_violet">
             <span class="line_violet_text">WCF</span>
           </p>    
-          <div class="bottom_center">
-            <div class="bottom_center_news">
+          <div class="row bottom_center">
+            <div class="col bottom_center_news">
               <img src="img/1903.jpg" class="small_img" alt="News">
               <div class="bottom_center_text">
                 <span>              
@@ -150,7 +159,7 @@
                 </span>
               </div>
             </div>
-            <div class="bottom_center_news">
+            <div class="col bottom_center_news">
               <img src="img/2007.jpg" class="small_img" alt="News">
               <div class="bottom_center_text">
                 <span>              
@@ -158,7 +167,7 @@
                 </span>
               </div>  
             </div>
-            <div class="bottom_center_news">
+            <div class="col bottom_center_news">
               <img src="img/gerald.png" class="small_img" alt="News">
               <div class="bottom_center_text">
                 <span>              
@@ -168,7 +177,7 @@
             </div>   
           </div>              
         </div>    
-        <div class="bottom_block">
+        <div class="col-sm-12 col-xl-4 bottom_block">
           <p class="line_orange">
             <span class="line_orange_text">КУЛЬТУРА</span>
           </p> 
@@ -181,25 +190,38 @@
             <a class="read_more" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%BA%D0%B0">Узнать больше...</a> 
           </div>       
         </div> 
-      </div>
-      <div class="clents_block">
-        <div class="clents_line">
-          <p class="line_violet">
-            <span class="line_violet_text">CLENTS</span>
-          </p>
-        </div>           
-        <div class="clents">
-          <img class="clents_img_html" src="img/html5.png" alt="HTML logo">
-          <img class="clents_img_css" src="img/css3.png" alt="CSS logo">
-          <img class="clents_img_nodejs" src="img/nodejs.png" alt="Node JS logo">
-          <img class="clents_img_php" src="img/php.png" alt="PHP logo">
-          <img class="clents_img_mysql" src="img/mysql.png" alt="MySQL logo">
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-12">
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/jANE8lpoj2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe></div>
+        <div class="col-12">
+        <audio src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Kai_Engel/Satin/Kai_Engel_-_09_-_Homeroad.mp3" controls autoplay>
+        </audio></div>
+      </div>
+      <div class="row">
+        <div class="col clents_block">
+          <div class="rowclents_line">
+            <p class="line_violet">
+              <span class="line_violet_text">CLENTS</span>
+            </p>
+          </div>           
+          <div class="clents">
+            <img class="img-fluid clents_img_html" src="img/html5.png" alt="HTML logo">
+            <img class="img-fluid clents_img_css" src="img/css3.png" alt="CSS logo">
+            <img class="img-fluid clents_img_nodejs" src="img/nodejs.png" alt="Node JS logo">
+            <img class="img-fluid clents_img_php" src="img/php.png" alt="PHP logo">
+            <img class="img-fluid clents_img_mysql" src="img/mysql.png" alt="MySQL logo">
+          </div>
+        </div>
+      </div>
+      
     </main>
     <footer>
       <div class="footer">
-      <p>Copyrigtht &#169; Lodoss Team 2020</p>
+        <p>Copyrigtht &#169; Lodoss Team 2020</p>
       </div>
     </footer>
   </body>
