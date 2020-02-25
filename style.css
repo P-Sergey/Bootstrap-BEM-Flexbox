@@ -103,7 +103,7 @@
   height: 100%;
 }
 
-.banner_shading {
+.banner__shading {
   background-color: rgba(0, 0, 0, 0.38);   
   width: 100%;
   height: 100%;   
@@ -111,7 +111,7 @@
   top: 0; 
 }
 
-.banner_header {
+.banner__header {
   font-size: 4.8vw;
   line-height: 5.8vw;
   color: #FFC740;
@@ -122,13 +122,13 @@
 }
 
 @media screen and (min-width: 1440px) {
-  div.banner_header {
+  div.banner__header {
     font-size: 75px;
     line-height: 85px;
   }
 } 
 
-.banner_text {   
+.banner__text {   
   font-size: 1vw;  
   line-height: 1.3vw;
   color: white;
@@ -139,13 +139,13 @@
 }
 
 @media screen and (min-width: 1340px) {
-  div.banner_text {
+  div.banner__text {
     font-size: 14px;
     line-height: 18px;
   }
 }
 
-.banner_ref_button {
+.banner__button_ref {
   width: 125px;
   height: 34px;
   text-decoration: none;
@@ -157,26 +157,26 @@
   text-align: center;
 }
  
-.banner_ref {
+.banner__ref {
   color: white;
   text-decoration: none;
   font-weight: bold;
   align-self: center;
 }
 
-.banner_ref:hover {
+.banner__ref:hover {
   color: #FFC740;
   text-decoration: none;
 }
 
-.news_block {
+.news {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
 }
 
-.news {
+.news__block {
   display: flex;
   justify-content: space-between;
   width: auto;
@@ -190,7 +190,7 @@
   top: 16px;
 }
 
-.news_text {
+.news__block_text {
   height: 141px; 
   width: max-content;
   margin-left: 10px;
@@ -202,6 +202,7 @@
 .bottom_news {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .bottom_block {
